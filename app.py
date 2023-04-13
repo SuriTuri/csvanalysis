@@ -23,8 +23,8 @@ def analyze_data(df):
     prompt = f"データサイエンティストとして、以下のCSVデータを分析し、サマリーと詳細の2つに分けて説明してください。データに外れ値が含まれている場合は、外れ値を含むデータと、外れ値を除いたデータでそれぞれ分析結果を出してください。\n\n{df.to_csv(index=False)}\n\n分析結果："
 
     # Call the OpenAI API
-    response = openai.ChatCompletion.create(
-        engine="gpt-3.5-turbo",
+    response = openai.Completion.create(
+        engine="text-davinci-003",
         prompt=prompt,
         max_tokens=4000,
         n=1,
