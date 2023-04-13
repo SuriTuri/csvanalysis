@@ -19,7 +19,6 @@ def index():
     return render_template("index.html")
 
 def analyze_data(df):
-def analyze_data(df):
     # Create a prompt for the OpenAI API
     prompt = f"データサイエンティストとして、以下のCSVデータを分析し、サマリーと詳細の2つに分けて説明してください。データに外れ値が含まれている場合は、外れ値を含むデータと、外れ値を除いたデータでそれぞれ分析結果を出してください。\n\n{df.to_csv(index=False)}\n\n分析結果："
 

@@ -3,7 +3,7 @@ services:
     name: csvanalysis
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
+    startCommand: python csvanalysis.py
     routes:
       - src: /static/(.*)
         dest: /static/$1
