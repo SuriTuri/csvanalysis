@@ -37,7 +37,6 @@ def analyze_data(df):
     summary, detailed = result.split("\n\n", 1)
 
     return summary, detailed
-    return summary, detailed
 
 if __name__ == "__main__":
     app.run()
