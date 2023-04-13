@@ -24,9 +24,9 @@ def analyze_data(df):
 
     # Call the OpenAI API
     response = openai.Completion.create(
-        engine="gpt-4-0314",
+        engine="gpt-3.5-turbo",
         prompt=prompt,
-        max_tokens=5000,
+        max_tokens=4000,
         n=1,
         stop=None,
         temperature=0.5,
